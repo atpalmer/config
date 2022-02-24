@@ -1,7 +1,8 @@
-colo desert
+syntax on
+set number
 
-set shiftwidth=4
-set tabstop=4
+set sw=4
+set ts=4
 set expandtab
 set smarttab
 
@@ -10,12 +11,10 @@ au FileType html setl sw=2 ts=2 et
 au FileType yaml setl sw=2 ts=2 et
 au FileType ruby setl sw=2 ts=2 et
 
-syntax on
-set number
-set wildmenu
-
 set incsearch
 set hlsearch
+
+set wildmenu
 
 nmap <cr> i<cr><esc>
 

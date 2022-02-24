@@ -16,6 +16,9 @@ au FileType lisp setl sw=2 ts=2 et
 
 au BufReadPost * exe "\'\""
 
+hi TrailingWhitespace ctermbg=red guibg=red
+match TrailingWhitespace /\s\+$/
+
 set incsearch
 set hlsearch
 

@@ -6,6 +6,7 @@ set ts=4
 set sts=4
 set expandtab
 set smarttab
+set autoindent
 
 au FileType lua setl sw=2 ts=2 et
 au FileType html setl sw=2 ts=2 et

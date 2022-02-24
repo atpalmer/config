@@ -28,6 +28,16 @@ set wildmenu
 
 nmap <cr> i<cr><esc>
 
+nmap <c-left> <c-w><c-h>
+nmap <c-right> <c-w><c-l>
+nmap <c-up> <c-w><c-k>
+nmap <c-down> <c-w><c-j>
+
+nmap <c-h> <c-w><c-h>
+nmap <c-l> <c-w><c-l>
+nmap <c-k> <c-w><c-k>
+nmap <c-j> <c-w><c-j>
+
 let mapleader=","
 nnoremap <leader>r :so ~/.vimrc<cr>
 nnoremap <leader>n :set nonumber!<cr>:set number?<cr>

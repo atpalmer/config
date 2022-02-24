@@ -48,3 +48,7 @@ nnoremap <leader>r :so ~/.vimrc<cr>
 nnoremap <leader>n :set nonumber!<cr>:set number?<cr>
 nnoremap <leader>h :noh<cr>
 nnoremap <leader>c :Chop<cr>
+nnoremap <leader>d <c-d>
+nnoremap <leader>u <c-u>
+nnoremap <leader>f <c-f>
+nnoremap <leader>b <c-b>

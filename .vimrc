@@ -27,7 +27,7 @@ set hlsearch
 
 set wildmenu
 
-nmap <cr> i<cr><esc>
+nmap <cr> A<cr><esc>
 
 nmap <c-left> <c-w><c-h>
 nmap <c-right> <c-w><c-l>

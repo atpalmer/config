@@ -22,6 +22,8 @@ aug END
 hi TrailingWhitespace ctermbg=red guibg=red
 match TrailingWhitespace /\s\+$/
 
+command Chop execute "normal $x0j"
+
 set incsearch
 set hlsearch
 
@@ -43,3 +45,4 @@ let mapleader=","
 nnoremap <leader>r :so ~/.vimrc<cr>
 nnoremap <leader>n :set nonumber!<cr>:set number?<cr>
 nnoremap <leader>h :noh<cr>
+nnoremap <leader>c :Chop<cr>

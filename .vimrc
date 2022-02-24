@@ -8,13 +8,15 @@ set expandtab
 set smarttab
 set autoindent
 
-au FileType lua setl sw=2 ts=2 et
-au FileType html setl sw=2 ts=2 et
-au FileType yaml setl sw=2 ts=2 et
-au FileType ruby setl sw=2 ts=2 et
-au FileType lisp setl sw=2 ts=2 et
-
-au BufReadPost * exe "\'\""
+aug vimrc
+    au!
+    au FileType lua setl sw=2 ts=2 et
+    au FileType html setl sw=2 ts=2 et
+    au FileType yaml setl sw=2 ts=2 et
+    au FileType ruby setl sw=2 ts=2 et
+    au FileType lisp setl sw=2 ts=2 et
+    au BufReadPost * exe "\'\""
+aug END
 
 hi TrailingWhitespace ctermbg=red guibg=red
 match TrailingWhitespace /\s\+$/

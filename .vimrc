@@ -12,6 +12,8 @@ au FileType yaml setl sw=2 ts=2 et
 au FileType ruby setl sw=2 ts=2 et
 au FileType lisp setl sw=2 ts=2 et
 
+au BufReadPost * exe "\'\""
+
 set incsearch
 set hlsearch
 

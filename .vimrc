@@ -73,6 +73,8 @@ nmap <c-l> <c-w><c-l>
 nmap <c-k> <c-w><c-k>
 nmap <c-j> <c-w><c-j>
 
+inoremap qq <esc>
+
 let mapleader=","
 nnoremap <leader>r :so ~/.vimrc<cr>
 nnoremap <leader>n :set nonumber!<cr>:set number?<cr>

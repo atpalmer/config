@@ -29,6 +29,19 @@ aug vimrc
     au BufReadPost * exe "\'\""
 aug END
 
+aug vimrc_c
+    au!
+    au FileType c :iabbrev <buffer> cif if (0 == 1) {<cr>}<esc>V%o=f(
+    au FileType c :iabbrev <buffer> cfor for (int i = 0; i < 0; ++i) {<cr>}<esc>V%o=f0;c
+    au FileType c :iabbrev <buffer> cswitch switch {<cr>case 0:<cr>break;<cr>default:<cr>break;<cr>}<esc>V%o=jf0c
+    au FileType c :iabbrev <buffer> #i< #include <X.h><esc>0fXc
+    au FileType c :iabbrev <buffer> #i" #include "X.h"<esc>0fXc
+    au FileType c :iabbrev <buffer> #d #define
+    au FileType c :iabbrev <buffer> #m #define X() do {\<cr>;\<cr>} while(0)<esc>Vk>k0fXc
+aug END
+
+iabbrev <buffer> rr return
+
 hi TrailingWhitespace ctermbg=red guibg=red
 match TrailingWhitespace /\s\+$/
 

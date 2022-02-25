@@ -40,6 +40,12 @@ aug vimrc_c
     au FileType c :iabbrev <buffer> #m #define X() do {\<cr>;\<cr>} while(0)<esc>Vk>k0fXc
 aug END
 
+aug vimrc_perl
+    au!
+    au FileType perl :iabbrev <buffer> p{ package X {<cr>use Carp;<cr><cr>sub new {<cr>my ($class) = @_;<cr>}<cr>}<esc>V%=0fXc
+    au FileType perl :iabbrev <buffer> psub sub X {<cr>my ($self) = @_;<cr>}<esc>V%=0fXc
+aug END
+
 iabbrev <buffer> rr return
 
 hi TrailingWhitespace ctermbg=red guibg=red

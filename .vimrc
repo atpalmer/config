@@ -8,6 +8,8 @@ set expandtab
 set smarttab
 set autoindent
 
+set scrolloff=4
+
 set incsearch
 set hlsearch
 set wildmenu

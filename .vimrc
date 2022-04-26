@@ -14,6 +14,9 @@ set incsearch
 set hlsearch
 set wildmenu
 
+set splitbelow
+set splitright
+
 set statusline=[line:\ %l,\col:\ %c]\ %l/%L\ %p%%\ <byteno:\ %o>%=<codepoint:\ %b\ (0x%B)>\ [filetype:\ %Y]\ <path:\ %F>\ %m%r
 set laststatus=2
 
